@@ -16,12 +16,20 @@
     <label>Tarifa por hora</label>
     <input type="number" id="tarifa">
 
-    <label>Descuento (%)</label>
-    <input type="number" id="descuento">
+    <label>Urgencia del pedido</label>
+    <select id="urgencia">
+      <option value="">Seleccione</option>
+      <option value="normal">Normal</option>
+      <option value="urgente">Urgente</option>
+      <option value="express">Express</option>
+    </select>
 
     <button onclick="cotizar()">Calcular</button>
 
+    <p id="error"></p>
+
     <div class="resultado">
+      <p id="urgenciaResultado"></p>
       <p id="subtotal"></p>
       <p id="iva"></p>
       <p id="total"></p>
