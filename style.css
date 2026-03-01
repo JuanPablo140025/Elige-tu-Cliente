@@ -20,7 +20,7 @@ label {
   margin-top: 10px;
 }
 
-input {
+input, select {
   width: 100%;
   padding: 6px;
   margin-top: 5px;
@@ -39,4 +39,9 @@ button {
 .resultado {
   margin-top: 15px;
   font-weight: bold;
+}
+
+#error {
+  color: red;
+  margin-top: 10px;
 }
